@@ -59,6 +59,10 @@ func RegisterEvent(id int, f EventFunc) *EventMgr {
 	return g_EventMgr.RegisterEvent(id, f)
 }
 
+func UnregisterEvent(id int, f EventFunc) *EventMgr {
+	return g_EventMgr.UnregisterEvent(id, f)
+}
+
 func SendEvent(id int, args map[string]interface{}) {
 	g_EventMgr.SendEvent(id, args)
 }
