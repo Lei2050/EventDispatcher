@@ -1,0 +1,9 @@
+{
+    "gopls": {
+        "experimentalWorkspaceModule": true,
+    },
+    "workbench.tree.indent": 16,
+    "editor.fontFamily": "'Courier New'",
+    "editor.fontSize": 18,
+    "go.testFlags": ["-v"],
+}
