@@ -1,4 +1,4 @@
-package event
+package EventDispatcher
 
 type EventArg map[string]any
 
