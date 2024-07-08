@@ -37,6 +37,7 @@ func (em *EventMgr) UnregisterEvent(id int, f EventFunc) *EventMgr {
 			handlers[idx], handlers[handlerSize-1] = handlers[handlerSize-1], nil
 		}
 		handlers = handlers[:handlerSize-1]
+		em.efs[id] = handlers
 	}
 	return em
 }
